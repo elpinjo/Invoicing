@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.util.Values">
+    <record name="INVOIC" javaclass="com.wm.data.ISMemDataImpl">
+      <record name="UNH" javaclass="com.wm.data.ISMemDataImpl">
+        <value name="@record-id">UNH</value>
+        <value name="@position">10</value>
+        <record name="@delimiters" javaclass="com.wm.data.ISMemDataImpl">
+          <value name="record">'</value>
+          <value name="field">+</value>
+          <value name="subfield">:</value>
+          <value name="release">?</value>
+          <record name="FormatInfo" javaclass="com.wm.data.ISMemDataImpl">
+          </record>
+        </record>
+        <value name="@segment-id">UNH</value>
+        <value name="UNH01">12107</value>
+        <record name="UNH02" javaclass="com.wm.data.ISMemDataImpl">
+          <value name="@composite">yes</value>
+          <value name="S00901">INVOIC</value>
+          <value name="S00902">D</value>
+          <value name="S00903">97A</value>
+          <value name="S00904">UN</value>
+        </record>
+        <record name="BGM" javaclass="com.wm.data.ISMemDataImpl">
+          <value name="@record-id">BGM</value>
+          <value name="@position">20</value>
+          <value name="@segment-id">BGM</value>
+          <record name="BGM01" javaclass="com.wm.data.ISMemDataImpl">
+            <value name="@composite">yes</value>
+            <value name="C00201">380</value>
+          </record>
+          <record name="BGM02" javaclass="com.wm.data.ISMemDataImpl">
+            <value name="@composite">yes</value>
+            <value name="C10601">ABCD1234</value>
+          </record>
+          <value name="BGM03">9</value>
+        </record>
+        <array name="DTM" type="record" depth="1">
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <value name="@record-id">DTM</value>
+            <value name="@position">30</value>
+            <value name="@segment-id">DTM</value>
+            <record name="DTM01" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="@composite">yes</value>
+              <value name="C50701">137</value>
+              <value name="C50702">19980110</value>
+              <value name="C50703">102</value>
+            </record>
+            <value name="@loops-id">DTM__UNH</value>
+          </record>
+        </array>
+        <array name="RFF" type="record" depth="1">
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <value name="@record-id">RFF</value>
+            <value name="@position">120</value>
+            <value name="@segment-id">RFF</value>
+            <record name="RFF01" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="@composite">yes</value>
+              <value name="C50601">ON</value>
+              <value name="C50602">0123456789123</value>
+            </record>
+            <value name="@loops-id">RFF__UNH</value>
+          </record>
+        </array>
+        <array name="NAD" type="record" depth="1">
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <value name="@record-id">NAD</value>
+            <value name="@position">210</value>
+            <value name="@segment-id">NAD</value>
+            <value name="NAD01">BY</value>
+            <record name="NAD02" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="@composite">yes</value>
+              <value name="C08201">1111111</value>
+              <value name="C08203">31B</value>
+            </record>
+            <value name="@loops-id">NAD__UNH</value>
+          </record>
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <value name="@record-id">NAD</value>
+            <value name="@position">210</value>
+            <value name="@segment-id">NAD</value>
+            <value name="NAD01">PE</value>
+            <record name="NAD02" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="@composite">yes</value>
+              <value name="C08201">2002450</value>
+              <value name="C08202">31B</value>
+            </record>
+            <value name="@loops-id">NAD__UNH</value>
+          </record>
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <value name="@record-id">NAD</value>
+            <value name="@position">210</value>
+            <value name="@segment-id">NAD</value>
+            <value name="NAD01">SU</value>
+            <record name="NAD02" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="@composite">yes</value>
+              <value name="C08201">3333333</value>
+              <value name="C08202">31B</value>
+            </record>
+            <value name="@loops-id">NAD__UNH</value>
+          </record>
+        </array>
+        <array name="LIN" type="record" depth="1">
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <value name="@record-id">LIN</value>
+            <value name="@position">1040</value>
+            <value name="@segment-id">LIN</value>
+            <value name="LIN01">1</value>
+            <value name="@loops-id">LIN__UNH</value>
+            <array name="PIA" type="record" depth="1">
+              <record javaclass="com.wm.data.ISMemDataImpl">
+                <value name="@record-id">PIA</value>
+                <value name="@position">1050</value>
+                <value name="@segment-id">PIA</value>
+                <value name="PIA01">5</value>
+                <record name="PIA02" javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="@composite">yes</value>
+                  <value name="C21201">0835201031</value>
+                  <value name="C21202">IB</value>
+                </record>
+                <value name="@loops-id">PIA__LIN</value>
+              </record>
+            </array>
+            <array name="QTY" type="record" depth="1">
+              <record javaclass="com.wm.data.ISMemDataImpl">
+                <value name="@record-id">QTY</value>
+                <value name="@position">1080</value>
+                <value name="@segment-id">QTY</value>
+                <record name="QTY01" javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="@composite">yes</value>
+                  <value name="C18601">47</value>
+                  <value name="C18602">2</value>
+                </record>
+                <value name="@loops-id">QTY__LIN</value>
+              </record>
+            </array>
+            <array name="PRI" type="record" depth="1">
+              <record javaclass="com.wm.data.ISMemDataImpl">
+                <value name="@record-id">PRI</value>
+                <value name="@position">1270</value>
+                <value name="@segment-id">PRI</value>
+                <record name="PRI01" javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="@composite">yes</value>
+                  <value name="C50901">AAA</value>
+                  <value name="C50902">8.4</value>
+                </record>
+                <value name="@loops-id">PRI__LIN</value>
+              </record>
+              <record javaclass="com.wm.data.ISMemDataImpl">
+                <value name="@record-id">PRI</value>
+                <value name="@position">1270</value>
+                <value name="@segment-id">PRI</value>
+                <record name="PRI01" javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="@composite">yes</value>
+                  <value name="C50901">AAB</value>
+                  <value name="C50902">10.5</value>
+                  <value name="C50904">SRP</value>
+                </record>
+                <value name="@loops-id">PRI__LIN</value>
+              </record>
+            </array>
+            <array name="ALC" type="record" depth="1">
+              <record javaclass="com.wm.data.ISMemDataImpl">
+                <value name="@record-id">ALC</value>
+                <value name="@position">1650</value>
+                <value name="@segment-id">ALC</value>
+                <value name="ALC01">A</value>
+                <value name="@loops-id">ALC__LIN</value>
+                <record name="PCD" javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="@record-id">PCD</value>
+                  <value name="@position">1730</value>
+                  <value name="@segment-id">PCD</value>
+                  <record name="PCD01" javaclass="com.wm.data.ISMemDataImpl">
+                    <value name="@composite">yes</value>
+                    <value name="C50101">3</value>
+                    <value name="C50102">20</value>
+                  </record>
+                </record>
+              </record>
+            </array>
+          </record>
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <value name="@record-id">LIN</value>
+            <value name="@position">1040</value>
+            <value name="@segment-id">LIN</value>
+            <value name="LIN01">2</value>
+            <value name="@loops-id">LIN__UNH</value>
+            <array name="PIA" type="record" depth="1">
+              <record javaclass="com.wm.data.ISMemDataImpl">
+                <value name="@record-id">PIA</value>
+                <value name="@position">1050</value>
+                <value name="@segment-id">PIA</value>
+                <value name="PIA01">5</value>
+                <record name="PIA02" javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="@composite">yes</value>
+                  <value name="C21201">0835208338</value>
+                  <value name="C21202">IB</value>
+                </record>
+                <value name="@loops-id">PIA__LIN</value>
+              </record>
+            </array>
+            <array name="QTY" type="record" depth="1">
+              <record javaclass="com.wm.data.ISMemDataImpl">
+                <value name="@record-id">QTY</value>
+                <value name="@position">1080</value>
+                <value name="@segment-id">QTY</value>
+                <record name="QTY01" javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="@composite">yes</value>
+                  <value name="C18601">47</value>
+                  <value name="C18602">1</value>
+                </record>
+                <value name="@loops-id">QTY__LIN</value>
+              </record>
+            </array>
+            <array name="PRI" type="record" depth="1">
+              <record javaclass="com.wm.data.ISMemDataImpl">
+                <value name="@record-id">PRI</value>
+                <value name="@position">1270</value>
+                <value name="@segment-id">PRI</value>
+                <record name="PRI01" javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="@composite">yes</value>
+                  <value name="C50901">AAA</value>
+                  <value name="C50902">24</value>
+                </record>
+                <value name="@loops-id">PRI__LIN</value>
+              </record>
+              <record javaclass="com.wm.data.ISMemDataImpl">
+                <value name="@record-id">PRI</value>
+                <value name="@position">1270</value>
+                <value name="@segment-id">PRI</value>
+                <record name="PRI01" javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="@composite">yes</value>
+                  <value name="C50901">AAB</value>
+                  <value name="C50902">30</value>
+                  <value name="C50904">SRP</value>
+                </record>
+                <value name="@loops-id">PRI__LIN</value>
+              </record>
+            </array>
+            <array name="ALC" type="record" depth="1">
+              <record javaclass="com.wm.data.ISMemDataImpl">
+                <value name="@record-id">ALC</value>
+                <value name="@position">1650</value>
+                <value name="@segment-id">ALC</value>
+                <value name="ALC01">A</value>
+                <value name="@loops-id">ALC__LIN</value>
+                <record name="PCD" javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="@record-id">PCD</value>
+                  <value name="@position">1730</value>
+                  <value name="@segment-id">PCD</value>
+                  <record name="PCD01" javaclass="com.wm.data.ISMemDataImpl">
+                    <value name="@composite">yes</value>
+                    <value name="C50101">3</value>
+                    <value name="C50102">20</value>
+                  </record>
+                </record>
+              </record>
+            </array>
+          </record>
+        </array>
+        <record name="UNS" javaclass="com.wm.data.ISMemDataImpl">
+          <value name="@record-id">UNS</value>
+          <value name="@position">2090</value>
+          <value name="@segment-id">UNS</value>
+          <value name="UNS01">S</value>
+        </record>
+        <array name="MOA" type="record" depth="1">
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <value name="@record-id">MOA</value>
+            <value name="@position">2120</value>
+            <value name="@segment-id">MOA</value>
+            <record name="MOA01" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="@composite">yes</value>
+              <value name="C51601">86</value>
+              <value name="C51602">40.8</value>
+            </record>
+            <value name="@loops-id">MOA__UNH</value>
+            <record name="CNT" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="@record-id">CNT</value>
+              <value name="@position">2100</value>
+              <value name="@segment-id">CNT</value>
+              <record name="CNT01" javaclass="com.wm.data.ISMemDataImpl">
+                <value name="@composite">yes</value>
+                <value name="C27001">2</value>
+                <value name="C27002">2</value>
+              </record>
+              <value name="@loops-id">CNT__MOA</value>
+            </record>
+            <record name="CNT" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="@record-id">CNT</value>
+              <value name="@position">2100</value>
+              <value name="@segment-id">CNT</value>
+              <record name="CNT01" javaclass="com.wm.data.ISMemDataImpl">
+                <value name="@composite">yes</value>
+                <value name="C27001">1</value>
+                <value name="C27002">3</value>
+              </record>
+              <value name="@loops-id">CNT__MOA</value>
+            </record>
+          </record>
+        </array>
+        <record name="UNT" javaclass="com.wm.data.ISMemDataImpl">
+          <value name="@record-id">UNT</value>
+          <value name="@position">2240</value>
+          <value name="@segment-id">UNT</value>
+          <value name="UNT01">26</value>
+          <value name="UNT02">12107</value>
+        </record>
+      </record>
+    </record>
+  </record>
+</IDataXMLCoder>

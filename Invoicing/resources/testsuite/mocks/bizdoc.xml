@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.util.Values">
+    <record name="bizdoc" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="InternalID">0ag56300hu7sjfcl00000ghj</value>
+      <idatacodable name="DocType" javaclass="com.wm.data.BasicIDataCodable">
+        <value name="TypeID">WMUNED97A---INVOIC------</value>
+        <value name="TypeName">UNEDIFACT 97A INVOIC</value>
+        <value name="TypeDescription"></value>
+        <idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">false</value>
+        </idatacodable>
+        <idatacodable name="Hidden" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">false</value>
+        </idatacodable>
+        <idatacodable name="SenderFromSession" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">false</value>
+        </idatacodable>
+        <value name="LastModified">2024-05-17 13:29:29.664</value>
+        <value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+        <record name="PreProcessingFlags" javaclass="com.wm.data.ISMemDataImpl">
+          <value name="verify?">no</value>
+          <value name="validate?">no</value>
+          <value name="persist?">yes</value>
+          <value name="unique?">don't care</value>
+          <value name="persistOption?">content, attributes and activity log</value>
+          <null name="dupCheckSvc"/>
+        </record>
+        <null name="Attributes"/>
+        <null name="RequiredAttributes"/>
+        <null name="PipelineMatchIData"/>
+        <idatacodable name="Routing" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">true</value>
+        </idatacodable>
+        <idatacodable name="BAMMonitorableDoctype" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">false</value>
+        </idatacodable>
+        <null name="BAMMonitoringAttributes"/>
+        <null name="BAMEventMap"/>
+        <null name="BAMAction"/>
+        <null name="BAMEventMapName"/>
+        <null name="SubDocTypeID"/>
+        <null name="BAMAttrListEventOption"/>
+        <null name="BAMDocTypeMapping"/>
+        <null name="BAMDocTypeDependency"/>
+        <value name="Type">3</value>
+        <value name="standard">UNEDIFACT</value>
+        <value name="version">97A</value>
+        <value name="transaction">INVOIC</value>
+        <value name="VERSION_NO">1.0</value>
+        <null name="iidQuery"/>
+        <record name="queries" javaclass="com.wm.data.ISMemDataImpl">
+        </record>
+        <null name="envelopeIData"/>
+      </idatacodable>
+      <value name="DocTimestamp">2024-05-19 00:38:34.261</value>
+      <value name="LastModified">2024-05-19 00:38:34.261</value>
+      <value name="SenderID">0ag56300hu43rdn600000f90</value>
+      <value name="ReceiverID">0ag56300hu43p1k800000f8t</value>
+      <value name="DocumentID">12107</value>
+      <value name="GroupID">812</value>
+      <null name="ConversationID"/>
+      <value name="SystemStatus">NOT ROUTED</value>
+      <null name="UserStatus"/>
+      <record name="Attributes" javaclass="com.wm.data.ISMemDataImpl">
+        <null name="EDI Processing Mode"/>
+        <value name="EDI Batch">None</value>
+        <value name="EDI Acknowledgment">DISABLE</value>
+        <value name="EDI Status">Processed</value>
+        <value name="Envelope CtrlNum Status">Valid</value>
+        <value name="Group CtrlNum Status">Not Present</value>
+      </record>
+      <null name="Signature"/>
+      <null name="SignedBody"/>
+      <array name="ContentParts" type="record" depth="1">
+        <record javaclass="com.wm.data.ISMemDataImpl">
+          <value name="PartName">EDIdata</value>
+          <value name="MimeType">application/EDI; charset=utf-8</value>
+          <number name="Length" type="java.lang.Integer">413</number>
+          <byte name="Bytes">
+VU5CK1VOT0E6MytNWUNIQUlOQ006WlpaKzkyNTQ4NU1YMDA6OCswODA5MDk6MTM1Nys4MTInVU5IKzEyMTA3K0lOVk9JQzpEOjk3QTpVTidCR00rMzgwK0FCQ0QxMjM0KzknRFRNKzEzNzoxOTk4MDExMDoxMDInUkZGK09OOjAxMjM0NTY3ODkxMjMnTkFEK0JZKzExMTExMTE6OjMxQidOQUQrUEUrMjAwMjQ1MDozMUInTkFEK1NVKzMzMzMzMzM6MzFCJ0xJTisxJ1BJQSs1KzA4MzUyMDEwMzE6SUInUVRZKzQ3OjInUFJJK0FBQTo4LjQnUFJJK0FBQjoxMC41OjpTUlAnQUxDK0EnUENEKzM6MjAnTElOKzInUElBKzUrMDgzNTIwODMzODpJQidRVFkrNDc6MSdQUkkrQUFBOjI0J1BSSStBQUI6MzA6OlNSUCdBTEMrQSdQQ0QrMzoyMCdVTlMrUydNT0ErODY6NDAuOCdDTlQrMjoyJ0NOVCsxOjMnVU5UKzI2KzEyMTA3J1VOWisxKzgxMic=          </byte>
+          <number name="PartIndex" type="java.lang.Integer">0</number>
+          <null name="StorageType"/>
+          <null name="StorageRef"/>
+          <idatacodable name="LargePart?" javaclass="com.wm.data.MBoolean">            <value name="MBoolean">false</value>
+          </idatacodable>
+          <idatacodable name="ResubmitAllowed?" javaclass="com.wm.data.MBoolean">            <value name="MBoolean">true</value>
+          </idatacodable>
+          <idatacodable name="ReadOnly?" javaclass="com.wm.data.MBoolean">            <value name="MBoolean">false</value>
+          </idatacodable>
+        </record>
+      </array>
+      <byte name="Content">
+VU5CK1VOT0E6MytNWUNIQUlOQ006WlpaKzkyNTQ4NU1YMDA6OCswODA5MDk6MTM1Nys4MTInVU5IKzEyMTA3K0lOVk9JQzpEOjk3QTpVTidCR00rMzgwK0FCQ0QxMjM0KzknRFRNKzEzNzoxOTk4MDExMDoxMDInUkZGK09OOjAxMjM0NTY3ODkxMjMnTkFEK0JZKzExMTExMTE6OjMxQidOQUQrUEUrMjAwMjQ1MDozMUInTkFEK1NVKzMzMzMzMzM6MzFCJ0xJTisxJ1BJQSs1KzA4MzUyMDEwMzE6SUInUVRZKzQ3OjInUFJJK0FBQTo4LjQnUFJJK0FBQjoxMC41OjpTUlAnQUxDK0EnUENEKzM6MjAnTElOKzInUElBKzUrMDgzNTIwODMzODpJQidRVFkrNDc6MSdQUkkrQUFBOjI0J1BSSStBQUI6MzA6OlNSUCdBTEMrQSdQQ0QrMzoyMCdVTlMrUydNT0ErODY6NDAuOCdDTlQrMjoyJ0NOVCsxOjMnVU5UKzI2KzEyMTA3J1VOWisxKzgxMic=      </byte>
+      <value name="Persisted?">true</value>
+      <record name="Errors" javaclass="com.wm.data.ISMemDataImpl">
+        <array name="Processing" type="record" depth="1">
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <value name="EntryTimestamp">2024-05-19 00:38:34.261</value>
+            <value name="EntryType">2</value>
+            <value name="EntryClass">Processing</value>
+            <value name="BriefMessage">Routing rule Inbound Invoice selected</value>
+            <null name="FullMessage"/>
+            <value name="RelatedDocID">0ag56300hu7sjfcl00000ghj</value>
+            <null name="RelatedPartnerID"/>
+            <null name="RelatedInstanceID"/>
+            <null name="RelatedStepID"/>
+            <null name="B2BUser"/>
+            <null name="RelatedDocTypeID"/>
+            <null name="RelatedProcRuleID"/>
+          </record>
+        </array>
+      </record>
+      <null name="Relationships"/>
+      <value name="LargeDocument?">false</value>
+      <value name="VERSION_NO">10.3.0.0</value>
+      <null name="ReceiveSvc"/>
+      <null name="OriginalSenderID"/>
+      <null name="OriginalReceiverID"/>
+      <null name="Comments"/>
+      <null name="MonitoringEnabled"/>
+      <null name="MonitoringDataItems"/>
+      <null name="SetMonitoringAction"/>
+      <null name="RepeatNum"/>
+      <value name="RoutingType"></value>
+      <value name="Duplicate">false</value>
+      <value name="ProcessStartTime">2024-05-19 00:38:34.261</value>
+    </record>
+  </record>
+</IDataXMLCoder>

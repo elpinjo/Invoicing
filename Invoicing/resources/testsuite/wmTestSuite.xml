@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="" name="InvoiceUnitTests">
+    <webMethodsTestCase description="Generate a Test Wizard" name="TC01_processInboundInvoice">
+        <mock folder="wm.b2b.edi" name="convertToValues">
+            <pipeline filename="resources/testsuite/mocks/INVOIC.xml"/>
+        </mock>
+        <mock folder="wm.b2b.editn" name="getTspace">
+            <pipeline filename="resources/testsuite/mocks/getTspace.xml"/>
+        </mock>
+        <service folder="demo.invoicing.pub" name="processInboundInvoice">
+            <input>
+                <file filename="resources/testsuite/demo_invoicing_pub_processInboundInvoice_input.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/testsuite/demo_invoicing_pub_processInboundInvoice_output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase name="TC02_map_INVOICtoInvoiceCanonical">
+        <service folder="demo.invoicing.flows.mapping" name="INVOICtoInvoiceCanonical">
+            <input>
+                <file filename="resources/testsuite/mocks/INVOIC.xml"/>
+            </input>
+            <expected>
+                <file/>
+                <field path="/invoice/invoice/header/summary/invoiceNumber" value="ABCD1234"/>
+                <field path="/invoice/invoice/header/summary/totalAmount" value="40.8"/>
+                <field path="/invoice/invoice/body/sender/companyName" value="2002450"/>
+                <field path="/invoice/invoice/body/items/item[1]/description" value="0835201031"/>
+                <field path="/invoice/invoice/body/items/item[1]/quantity" value="2"/>
+                <field path="/invoice/invoice/body/items/item[2]/quantity" value="1"/>
+                <field path="/invoice/invoice/body/items/item[2]/description" value="0835208338"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase name="TC03_flows_processInvoice_Success">
+        <service folder="demo.invoicing.flows" name="processInvoice">
+            <input>
+                <file filename="resources/testsuite/demo_invoicing_flow_processInvoice_ok_input.xml"/>
+            </input>
+            <expected>
+                <file/>
+                <field path="/response/status" value="0"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase name="TC04_flows_processInvoice_NotMatching">
+        <service folder="demo.invoicing.flows" name="processInvoice">
+            <input>
+                <file filename="resources/testsuite/demo_invoicing_flow_processInvoice_nok_input.xml"/>
+            </input>
+            <expected>
+                <file/>
+                <field path="/response/status" value="293"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>

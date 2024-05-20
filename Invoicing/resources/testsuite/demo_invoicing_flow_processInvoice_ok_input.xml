@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.util.Values">
+    <record name="document" javaclass="com.wm.data.ISMemDataImpl">
+      <record name="invoice" javaclass="com.wm.data.ISMemDataImpl">
+        <record name="header" javaclass="com.wm.data.ISMemDataImpl">
+          <record name="summary" javaclass="com.wm.data.ISMemDataImpl">
+            <value name="invoiceNumber">ABCD1234</value>
+            <value name="date">28-01-1997</value>
+            <value name="totalAmount">40.8</value>
+          </record>
+        </record>
+        <record name="body" javaclass="com.wm.data.ISMemDataImpl">
+          <record name="sender" javaclass="com.wm.data.ISMemDataImpl">
+            <value name="companyName">2002450</value>
+          </record>
+          <record name="receiver" javaclass="com.wm.data.ISMemDataImpl">
+            <value name="companyName">1111111</value>
+          </record>
+          <record name="items" javaclass="com.wm.data.ISMemDataImpl">
+            <array name="item" type="record" depth="1">
+              <record javaclass="com.wm.data.ISMemDataImpl">
+                <value name="description">0835201031</value>
+                <value name="quantity">2</value>
+                <value name="price">10.5</value>
+              </record>
+              <record javaclass="com.wm.data.ISMemDataImpl">
+                <value name="description">0835208338</value>
+                <value name="quantity">1</value>
+                <value name="price">30</value>
+              </record>
+            </array>
+          </record>
+        </record>
+      </record>
+    </record>
+  </record>
+</IDataXMLCoder>
