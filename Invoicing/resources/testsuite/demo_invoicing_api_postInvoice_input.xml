@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <record name="document" javaclass="com.wm.data.ISMemDataImpl">
+      <record name="invoice" javaclass="com.wm.data.ISMemDataImpl">
+        <record name="header" javaclass="com.wm.data.ISMemDataImpl">
+          <record name="summary" javaclass="com.wm.data.ISMemDataImpl">
+            <value name="invoiceNumber">ABC9808</value>
+            <value name="date">21-05-2024</value>
+            <value name="dueDate">20-07-2024</value>
+            <value name="totalAmount">1345.95</value>
+          </record>
+        </record>
+      </record>
+    </record>
+  </record>
+</IDataXMLCoder>

@@ -1,0 +1,44 @@
+{"invoice": {
+  "header": {
+    "summary": {
+      "invoiceNumber": "INV-123454",
+      "date":"2024-05-17",
+      "dueDate":"2024-06-16",
+      "totalAmount":112.50
+    },
+    "senderCompanyName":"MYCHAINCM",
+    "receiverCompanyName":"SWAG"
+  },
+  "body": {
+    "sender": {
+      "companyName":"My Retail Chain",
+      "address": {
+        "street":"789 Industrial Way",
+        "city":"Manufacturingville",
+        "zipCode":"10111"
+      }
+    },
+    "receiver": {
+      "clientName":"John Doe",
+      "address": {
+        "street": "123 Elm Street",
+        "city":"Anytown",
+        "zipCode":"12345"
+      }
+    },
+    "items": {
+      "item": [{
+        "description": "Widget",
+        "quantity": 10,
+        "price": 2.50
+      },
+      {
+        "description": "Gadget",
+        "quantity": 5,
+        "price": 5.00
+      }]
+    },
+    "paymentTerms": "Net 30"
+  }
+  }
+}

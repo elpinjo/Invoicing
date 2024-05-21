@@ -5,6 +5,7 @@
   <value name="node_subtype">restv2Descriptor</value>
   <value name="node_nsName">demo.invoicing.api:invoiceAPI</value>
   <value name="node_pkg">Invoicing</value>
+  <value name="node_comment"></value>
   <value name="is_public">false</value>
   <null name="sourceUri"/>
   <null name="swaggerUrl"/>
@@ -649,6 +650,14 @@
         <record name="POST" javaclass="com.wm.util.Values">
           <value name="operationType">POST</value>
           <value name="nsName">/invoice_POST</value>
+          <array name="consumes" type="value" depth="1">
+            <value>application/json</value>
+            <value>application/xml</value>
+          </array>
+          <array name="produces" type="value" depth="1">
+            <value>application/json</value>
+            <value>application/xml</value>
+          </array>
           <array name="requiredDefinitions" type="value" depth="1">
             <value>demo.invoicing.docs:invoice</value>
             <value>demo.invoicing.docs:invoice.invoice</value>

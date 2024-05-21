@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.util.Values">
+    <record name="TN_parms" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="$contentType">application/edi</value>
+      <value name="$contentEncoding">utf-8</value>
+    </record>
+    <record name="editn_xtn" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="SenderID">0ag56300hu43rdn600000f90</value>
+      <value name="ReceiverID">0ag56300hu43p1k800000f8t</value>
+      <value name="EnvelopeID">807</value>
+      <value name="GroupID">807</value>
+      <value name="date">080909</value>
+      <value name="time">1357</value>
+      <value name="type">INVOIC</value>
+      <value name="version">97A</value>
+      <value name="DocumentID">000012102</value>
+      <value name="ReverseRouteSID">MYCHAINCM</value>
+      <value name="ReverseRouteRID">925485MX00</value>
+      <value name="standard">UNEDIFACT</value>
+      <null name="FGControlNumber"/>
+      <null name="FGAckStatus"/>
+      <null name="FGGroupType"/>
+      <null name="SenderInternalIdentification"/>
+      <null name="SenderInternalSubIdentification"/>
+      <null name="ReceiverInternalIdentification"/>
+      <null name="ReceiverInternalSubIdentification"/>
+      <value name="SenderQualifier">ZZZ</value>
+      <value name="SenderIdentifier">MYCHAINCM</value>
+      <value name="ReceiverQualifier">8</value>
+      <value name="ReceiverIdentifier">925485MX00</value>
+    </record>
+    <value name="standard">UNEDIFACT</value>
+    <value name="encodingUsed">utf-8</value>
+    <value name="FAReconciliation">false</value>
+    <value name="processingMode">Testing</value>
+    <value name="batch">None</value>
+    <value name="processDocument">All</value>
+    <value name="envelopeControlNumberStatus">Not Validated</value>
+    <value name="groupControlNumberStatus">Not Present</value>
+    <byte name="Content">
+VU5CK1VOT0E6MitNWUNIQUlOQ006WlpaKzkyNTQ4NU1YMDA6OCswODA5MDk6MTM1Nys4MDcnVU5IKzAwMDAxMjEwMitJTlZPSUM6RDo5N0E6VU4nQkdNKzM4MCtBQkNEMTIzNCs5J0RUTSsxMzc6MTk5ODAxMTA6MTAyJ1JGRitPTjowMTIzNDU2Nzg5MTIzJ05BRCtCWSsxMTExMTExOjozMUInTkFEK1BFKzIwMDI0NTA6MzFCJ05BRCtTVSszMzMzMzMzOjMxQidMSU4rMSdQSUErNSswODM1MjAxMDMxOklCJ1FUWSs0NzoyJ1BSSStBQUE6OC40J1BSSStBQUI6MTAuNTo6U1JQJ0FMQytBJ1BDRCszOjIwJ0xJTisyJ1BJQSs1KzA4MzUyMDgzMzg6SUInUVRZKzQ3OjEnUFJJK0FBQToyNCdQUkkrQUFCOjMwOjpTUlAnQUxDK0EnUENEKzM6MjAnVU5TK1MnTU9BKzg2OjQwLjgnQ05UKzI6MidDTlQrMTozJ1VOVCsyNiswMDAwMTIxMDInVU5aKzErODA3Jw==    </byte>
+    <null name="FAStatus"/>
+    <record name="transactionDocuments" javaclass="com.wm.util.Values">
+      <value name="docID">0ag56300hud5dfgq000000ar</value>
+      <value name="docTypeID">WMUNED97A---INVOIC------</value>
+      <value name="docTypeName">UNEDIFACT 97A INVOIC</value>
+    </record>
+    <record name="bizdoc" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="InternalID">0ag56300hud5dfgq000000ar</value>
+      <idatacodable name="DocType" javaclass="com.wm.data.BasicIDataCodable">
+        <value name="TypeID">WMUNED97A---INVOIC------</value>
+        <value name="TypeName">UNEDIFACT 97A INVOIC</value>
+        <value name="TypeDescription"></value>
+        <idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">false</value>
+        </idatacodable>
+        <idatacodable name="Hidden" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">false</value>
+        </idatacodable>
+        <idatacodable name="SenderFromSession" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">false</value>
+        </idatacodable>
+        <value name="LastModified">2024-05-17 13:29:29.663</value>
+        <value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+        <record name="PreProcessingFlags" javaclass="com.wm.data.ISMemDataImpl">
+          <value name="verify?">no</value>
+          <value name="validate?">no</value>
+          <value name="persist?">yes</value>
+          <value name="unique?">don't care</value>
+          <value name="persistOption?">content, attributes and activity log</value>
+          <null name="dupCheckSvc"/>
+        </record>
+        <null name="Attributes"/>
+        <null name="RequiredAttributes"/>
+        <null name="PipelineMatchIData"/>
+        <idatacodable name="Routing" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">true</value>
+        </idatacodable>
+        <idatacodable name="BAMMonitorableDoctype" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">false</value>
+        </idatacodable>
+        <null name="BAMMonitoringAttributes"/>
+        <null name="BAMEventMap"/>
+        <null name="BAMAction"/>
+        <null name="BAMEventMapName"/>
+        <null name="SubDocTypeID"/>
+        <null name="BAMAttrListEventOption"/>
+        <null name="BAMDocTypeMapping"/>
+        <null name="BAMDocTypeDependency"/>
+        <value name="Type">3</value>
+        <value name="standard">UNEDIFACT</value>
+        <value name="version">97A</value>
+        <value name="transaction">INVOIC</value>
+        <value name="VERSION_NO">1.0</value>
+        <null name="iidQuery"/>
+        <record name="queries" javaclass="com.wm.data.ISMemDataImpl">
+        </record>
+        <null name="envelopeIData"/>
+      </idatacodable>
+      <value name="DocTimestamp">2024-05-21 01:48:47.132</value>
+      <value name="LastModified">2024-05-21 01:48:47.132</value>
+      <value name="SenderID">0ag56300hu43rdn600000f90</value>
+      <value name="ReceiverID">0ag56300hu43p1k800000f8t</value>
+      <value name="DocumentID">000012102</value>
+      <value name="GroupID">807</value>
+      <null name="ConversationID"/>
+      <value name="SystemStatus">NOT ROUTED</value>
+      <null name="UserStatus"/>
+      <record name="Attributes" javaclass="com.wm.data.ISMemDataImpl">
+        <value name="EDI Processing Mode">Testing</value>
+        <value name="EDI Batch">None</value>
+        <value name="EDI Acknowledgment">DISABLE</value>
+        <value name="EDI Status">Processed</value>
+        <value name="Envelope CtrlNum Status">Not Validated</value>
+        <value name="Group CtrlNum Status">Not Present</value>
+      </record>
+      <null name="Signature"/>
+      <null name="SignedBody"/>
+      <array name="ContentParts" type="record" depth="1">
+        <record javaclass="com.wm.data.ISMemDataImpl">
+          <value name="PartName">EDIdata</value>
+          <value name="MimeType">application/EDI; charset=utf-8</value>
+          <number name="Length" type="java.lang.Integer">421</number>
+          <byte name="Bytes">
+VU5CK1VOT0E6MitNWUNIQUlOQ006WlpaKzkyNTQ4NU1YMDA6OCswODA5MDk6MTM1Nys4MDcnVU5IKzAwMDAxMjEwMitJTlZPSUM6RDo5N0E6VU4nQkdNKzM4MCtBQkNEMTIzNCs5J0RUTSsxMzc6MTk5ODAxMTA6MTAyJ1JGRitPTjowMTIzNDU2Nzg5MTIzJ05BRCtCWSsxMTExMTExOjozMUInTkFEK1BFKzIwMDI0NTA6MzFCJ05BRCtTVSszMzMzMzMzOjMxQidMSU4rMSdQSUErNSswODM1MjAxMDMxOklCJ1FUWSs0NzoyJ1BSSStBQUE6OC40J1BSSStBQUI6MTAuNTo6U1JQJ0FMQytBJ1BDRCszOjIwJ0xJTisyJ1BJQSs1KzA4MzUyMDgzMzg6SUInUVRZKzQ3OjEnUFJJK0FBQToyNCdQUkkrQUFCOjMwOjpTUlAnQUxDK0EnUENEKzM6MjAnVU5TK1MnTU9BKzg2OjQwLjgnQ05UKzI6MidDTlQrMTozJ1VOVCsyNiswMDAwMTIxMDInVU5aKzErODA3Jw==          </byte>
+          <number name="PartIndex" type="java.lang.Integer">0</number>
+          <null name="StorageType"/>
+          <null name="StorageRef"/>
+          <idatacodable name="LargePart?" javaclass="com.wm.data.MBoolean">            <value name="MBoolean">false</value>
+          </idatacodable>
+          <idatacodable name="ResubmitAllowed?" javaclass="com.wm.data.MBoolean">            <value name="MBoolean">true</value>
+          </idatacodable>
+          <idatacodable name="ReadOnly?" javaclass="com.wm.data.MBoolean">            <value name="MBoolean">false</value>
+          </idatacodable>
+        </record>
+      </array>
+      <byte name="Content">
+VU5CK1VOT0E6MitNWUNIQUlOQ006WlpaKzkyNTQ4NU1YMDA6OCswODA5MDk6MTM1Nys4MDcnVU5IKzAwMDAxMjEwMitJTlZPSUM6RDo5N0E6VU4nQkdNKzM4MCtBQkNEMTIzNCs5J0RUTSsxMzc6MTk5ODAxMTA6MTAyJ1JGRitPTjowMTIzNDU2Nzg5MTIzJ05BRCtCWSsxMTExMTExOjozMUInTkFEK1BFKzIwMDI0NTA6MzFCJ05BRCtTVSszMzMzMzMzOjMxQidMSU4rMSdQSUErNSswODM1MjAxMDMxOklCJ1FUWSs0NzoyJ1BSSStBQUE6OC40J1BSSStBQUI6MTAuNTo6U1JQJ0FMQytBJ1BDRCszOjIwJ0xJTisyJ1BJQSs1KzA4MzUyMDgzMzg6SUInUVRZKzQ3OjEnUFJJK0FBQToyNCdQUkkrQUFCOjMwOjpTUlAnQUxDK0EnUENEKzM6MjAnVU5TK1MnTU9BKzg2OjQwLjgnQ05UKzI6MidDTlQrMTozJ1VOVCsyNiswMDAwMTIxMDInVU5aKzErODA3Jw==      </byte>
+      <value name="Persisted?">true</value>
+      <record name="Errors" javaclass="com.wm.data.ISMemDataImpl">
+        <array name="Processing" type="record" depth="1">
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <value name="EntryTimestamp">2024-05-21 01:48:47.132</value>
+            <value name="EntryType">2</value>
+            <value name="EntryClass">Processing</value>
+            <value name="BriefMessage">Routing rule Inbound Invoice selected</value>
+            <null name="FullMessage"/>
+            <value name="RelatedDocID">0ag56300hud5dfgq000000ar</value>
+            <null name="RelatedPartnerID"/>
+            <null name="RelatedInstanceID"/>
+            <null name="RelatedStepID"/>
+            <null name="B2BUser"/>
+            <null name="RelatedDocTypeID"/>
+            <null name="RelatedProcRuleID"/>
+          </record>
+        </array>
+      </record>
+      <null name="Relationships"/>
+      <value name="LargeDocument?">false</value>
+      <value name="VERSION_NO">10.3.0.0</value>
+      <null name="ReceiveSvc"/>
+      <null name="OriginalSenderID"/>
+      <null name="OriginalReceiverID"/>
+      <null name="Comments"/>
+      <null name="MonitoringEnabled"/>
+      <null name="MonitoringDataItems"/>
+      <null name="SetMonitoringAction"/>
+      <null name="RepeatNum"/>
+      <value name="RoutingType"></value>
+      <value name="Duplicate">false</value>
+      <value name="ProcessStartTime">2024-05-21 01:48:47.13</value>
+    </record>
+    <record name="flags" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="verify?">no</value>
+      <value name="validate?">no</value>
+      <value name="persist?">yes</value>
+      <value name="unique?">don't care</value>
+      <value name="persistOption?">content, attributes and activity log</value>
+      <null name="dupCheckSvc"/>
+    </record>
+    <record name="rule" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="RuleName">Inbound Invoice</value>
+      <value name="RuleDescription"></value>
+      <value name="Disabled?">false</value>
+      <null name="SenderID"/>
+      <array name="ReceiverID" type="value" depth="1">
+        <value>000000000000000000000127</value>
+      </array>
+      <array name="DocTypeID" type="value" depth="1">
+        <value>WMUNED97A---INVOIC------</value>
+      </array>
+      <null name="UserStatus"/>
+      <value name="HasErrors">don't care</value>
+      <record name="PreRoutingFlags" javaclass="com.wm.data.ISMemDataImpl">
+        <value name="verify?">don't care</value>
+        <value name="validate?">don't care</value>
+        <value name="persist?">don't care</value>
+        <value name="unique?">don't care</value>
+        <value name="persistOption?">don't care</value>
+        <null name="dupCheckSvc"/>
+      </record>
+      <null name="AlertID"/>
+      <null name="AlertType"/>
+      <null name="AlertSubject"/>
+      <null name="AlertMessage"/>
+      <array name="ResponseMessage" type="value" depth="1">
+        <null/>
+        <null/>
+      </array>
+      <value name="IntendedUserStatus">RECEIVED BY RULE</value>
+      <value name="ServiceName">demo.invoicing.pub:processInboundInvoice</value>
+      <record name="ServiceInput" javaclass="com.wm.data.ISMemDataImpl">
+        <record name="bizdoc" javaclass="com.wm.data.ISMemDataImpl">
+          <record name="DocType" javaclass="com.wm.data.ISMemDataImpl">
+            <value name="Deleted">false</value>
+            <record name="PreProcessingFlags" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="validate?">yes</value>
+              <value name="verify?">yes</value>
+              <value name="persist?">yes</value>
+              <value name="unique?">dont care</value>
+              <value name="persistOption?">don't care</value>
+            </record>
+            <value name="BAMMonitorableDoctype">false</value>
+          </record>
+        </record>
+      </record>
+      <value name="ServiceAsync?">sync</value>
+      <null name="SendTo"/>
+      <value name="LastModified">2024-05-19 00:28:49.197</value>
+      <null name="AttributeConditions"/>
+      <null name="DeliveryQueue"/>
+      <value name="RuleID">0ag56300hu43vvfk00000f9n</value>
+      <value name="LastChangeID">0ag56300hu7s1k2a00000g9k</value>
+      <value name="LastChangeUser">Administrator</value>
+      <value name="LastChangeSession">2de6bb7ce85745e88386b13c58be2906</value>
+      <number name="RuleIndex" type="java.lang.Integer">8</number>
+      <null name="SenderGroup"/>
+      <null name="ReceiverGroup"/>
+      <null name="SenderDisplayName"/>
+      <array name="ReceiverDisplayName" type="value" depth="1">
+        <value>Enterprise (SwagCorp (IT)) </value>
+      </array>
+      <array name="DocTypeName" type="value" depth="1">
+        <value>UNEDIFACT 97A INVOIC</value>
+      </array>
+      <null name="SenderGroupName"/>
+      <null name="ReceiverGroupName"/>
+      <value name="ToMwSString">    Internal ID:                                                                                                                                      0ag56300hu43vvfk00000f9n
+    Name:                                                                                                                                             Inbound Invoice
+    Disabled?:                                                                                                                                        false
+
+    Criteria:                                                                                                                                        
+                Sender:                                                                                                                               Any
+
+                Receiver:                                                                                                                             Enterprise (SwagCorp (IT)) 
+
+                DocType:                                                                                                                              UNEDIFACT 97A INVOIC
+
+                Has Errors:                                                                                                                           May have errors
+
+    PreProcessing Flags:                 
+                verify?                                                                                                                               Defer to document type
+                validate?                                                                                                                             Defer to document type
+                persist?                                                                                                                              Defer to document type
+                persistOption?                                                                                                                        Defer to document type
+                unique?                                                                                                                               Defer to document type
+
+    Action - message:                  
+                Response Message:                                                                                                                     , 
+    Action: change status:                  
+                Intended User Status:                                                                                                                 RECEIVED BY RULE
+    Action - invoke service:                 
+                Service Name:                                                                                                                         demo.invoicing.pub:processInboundInvoice
+                Service Input:                                                                                                                        
+					bizdoc : 
+						DocType : 
+							Deleted : false
+
+							PreProcessingFlags : 
+								validate? : yes
+
+								verify? : yes
+
+								persist? : yes
+
+								unique? : dont care
+
+								persistOption? : don't care
+
+
+							BAMMonitorableDoctype : false
+
+
+
+                ServiceAsync?:                                                                                                                        sync
+
+    Last Modified Time:                                                                                                                               2024-05-19 00:28:49.197
+    Last Change User:                                                                                                                                 Administrator
+    Last Change Session:                                                                                                                              2de6bb7ce85745e88386b13c58be2906
+</value>
+      <null name="IntegrationDetails"/>
+      <value name="DefaultRule?">false</value>
+      <null name="WmioIntegrationDetails"/>
+      <null name="WmioCloudContainerDetails"/>
+    </record>
+    <record name="sender" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="ProfileID">0ag56300hu43rdn600000f90</value>
+      <value name="CorporationName">My Retail Chain</value>
+      <null name="OrgUnit"/>
+      <value name="Type">TNServer</value>
+      <idatacodable name="Self?" javaclass="com.wm.data.MBoolean">        <value name="MBoolean">false</value>
+      </idatacodable>
+      <value name="Status">Active</value>
+      <null name="RemoteStatus"/>
+      <value name="PreferredProtocol">HTTP - mock</value>
+      <null name="PollingProtocol"/>
+      <value name="TNVersion">10.3.0.0</value>
+      <idatacodable name="Deleted?" javaclass="com.wm.data.MBoolean">        <value name="MBoolean">false</value>
+      </idatacodable>
+      <number name="TimeToWait" type="java.lang.Integer">0</number>
+      <number name="RetryLimit" type="java.lang.Short">0</number>
+      <number name="RetryFactor" type="java.lang.Integer">1</number>
+      <null name="ProfileGroups"/>
+      <idatacodable name="RoutingOffStatus" javaclass="com.wm.data.MBoolean">        <value name="MBoolean">false</value>
+      </idatacodable>
+      <null name="Substatus"/>
+      <null name="PreferredProtocolType"/>
+    </record>
+    <record name="receiver" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="ProfileID">0ag56300hu43p1k800000f8t</value>
+      <value name="CorporationName">SwagCorp</value>
+      <value name="OrgUnit">IT</value>
+      <value name="Type">TNServer</value>
+      <idatacodable name="Self?" javaclass="com.wm.data.MBoolean">        <value name="MBoolean">true</value>
+      </idatacodable>
+      <value name="Status">Active</value>
+      <null name="RemoteStatus"/>
+      <value name="PreferredProtocol">Queue for polling</value>
+      <null name="PollingProtocol"/>
+      <value name="TNVersion">10.3.0.0</value>
+      <idatacodable name="Deleted?" javaclass="com.wm.data.MBoolean">        <value name="MBoolean">false</value>
+      </idatacodable>
+      <number name="TimeToWait" type="java.lang.Integer">0</number>
+      <number name="RetryLimit" type="java.lang.Short">0</number>
+      <number name="RetryFactor" type="java.lang.Integer">1</number>
+      <null name="ProfileGroups"/>
+      <idatacodable name="RoutingOffStatus" javaclass="com.wm.data.MBoolean">        <value name="MBoolean">false</value>
+      </idatacodable>
+      <null name="Substatus"/>
+      <null name="PreferredProtocolType"/>
+    </record>
+  </record>
+</IDataXMLCoder>
