@@ -55,4 +55,24 @@
             </expected>
         </service>
     </webMethodsTestCase>
+    <webMethodsTestCase name="TC05_API_PostInvoice">
+        <service folder="demo.invoicing.api.invoice_.services" name="postInvoice" requestContentType="application/json">
+            <input>
+                <file filename="resources/testsuite/demo_invoicing_api_postInvoice_input.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/testsuite/demo_invoicing_api_postInvoice_output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="Generate a Test Wizard" name="TC_processInboundInvoice">
+        <service folder="demo.invoicing.pub" name="processInboundInvoice">
+            <input>
+                <file filename="resources/testsuite/demo_invoicing_pub_processInboundInvoice_input.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/testsuite/demo_invoicing_pub_processInboundInvoice_output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
 </webMethodsTestSuite>
